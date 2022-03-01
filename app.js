@@ -13,5 +13,9 @@ document.addEventListener("keydown", (evt) => {
 	whichVal.textContent = evt.which;   // in the html, using the element ids created
 	codeVal.textContent = evt.code;
 
+    if (evt.which == 32) {
+        keyVal.textContent = "Space Bar"; // Added to output Space Bar instead of " "
+    }
+    
 });
 
